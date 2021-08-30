@@ -34,6 +34,10 @@ public class LogicalPrograms {
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.stopwatch();
             }
+            case 7 -> {
+                VendingMachine vendingMachine = new VendingMachine();
+                vendingMachine.vendingMachine();
+            }
         }
     }
 }

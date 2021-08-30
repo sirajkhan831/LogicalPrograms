@@ -4,18 +4,24 @@ import java.util.Scanner;
 
 public class CouponNumber {
     public void couponNumber() {
-        System.out.print("Enter the number: ");
-        Scanner numberScan = new Scanner(System.in);
-        int number = numberScan.nextInt();
-        int number1 = 62;
-        int count = 0;
+        Scanner sd = new Scanner(System.in);
+        System.out.print("Enter number :");
+        int num = sd.nextInt();
+        int[] Array = new int[num];
 
-        while (number != number1)
-        {
-            number1 = (int) Math.floor(Math.random() * 100);
-            count++;
-            System.out.println(number+" " +number1);
-            System.out.println("Attempts : " + count);
+        for(int i=0;i<num;i++) {
+
+            int check =(int) (Math.random()*1000000) %1000000;
+            System.out.println(check );
+            for(int j=0;j<num;j++) {
+                if (Array[i] != Array[j]) {
+                    Array[i] = check;
+                    break;
+                }
+            }
+        }
+        for(int i=0;i<num;i++) {
+            System.out.println(Array[i]);
         }
     }
 }
