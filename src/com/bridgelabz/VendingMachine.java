@@ -15,7 +15,31 @@ public class VendingMachine {
         int store50 = check50();
         int store20 = check20();
         int store10 = check10();
-        System.out.println("Minimum number of notes that can be returned by the vending machine  : " + notes + "\nNumber of 1000 INR notes  : " + store1000 + "\nNumber of 500 INR notes  : " + store500 + "\nNumber of 100INR notes  : " + store100 + "\nNumber of 50INR notes  : " + store50 + "\nNumber of 20INR notes  : " + store20 + "\nNumber of 10INR notes  : " + store10);
+        System.out.println("Minimum number of notes that can be returned by the vending machine  : " + notes);
+        if (store1000 > 0)
+        {
+            System.out.println("Number of 1000 INR notes are : "+store1000);
+        }
+        if (store500 > 0)
+        {
+            System.out.println("Number of 500 INR notes are : "+store500);
+        }
+        if (store100 > 0)
+        {
+            System.out.println("Number of 100 INR notes are : "+store100);
+        }
+        if (store50 > 0)
+        {
+            System.out.println("Number of 50 INR notes are : "+store50);
+        }
+        if (store20 > 0)
+        {
+            System.out.println("Number of 20 INR notes are : "+store20);
+        }
+        if (store10 > 0)
+        {
+            System.out.println("Number of 10 INR notes are : "+store10);
+        }
     }
 
     private static int check1000() {
