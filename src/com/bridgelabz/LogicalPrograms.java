@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class LogicalPrograms {
 
     public static void main(String[] args) {
-        System.out.println("Enter choice of program : 1.Prime Number 2.Fibonacci 3.Reverse Number 4.Perfect Number 5.Coupon Number 6.Stopwatch");
+        System.out.println("Enter choice of program : 1.Prime Number 2.Fibonacci 3.Reverse Number 4.Perfect Number 5.Coupon Number 6.Stopwatch 7.Vending Machine");
         Scanner optionScan = new Scanner(System.in);
         int option = optionScan.nextInt();
 
